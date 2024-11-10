@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Search</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mentorSearch.css">
+</head>
+<body>
+
+<div class="search-container">
+    <h2>Search Mentors</h2>
+    <form action="search_mentors.html" method="GET">
+        <!-- Mentor Name Section -->
+        <div class="form-group">
+            <label for="mentor-name">Mentor Name</label>
+            <input type="text" id="mentor-name" name="mentor_name" placeholder="Enter mentor's name...">
+        </div>
+
+        <!-- Field of Expertise Section -->
+        <div class="form-group">
+            <label for="expertise">Field of Expertise</label>
+            <input type="text" id="expertise" name="expertise" placeholder="Enter field of expertise (e.g., Data Science, Marketing)...">
+        </div>
+
+        <!-- Affiliation Section -->
+        <div class="form-group">
+            <label for="affiliation">Affiliation</label>
+            <input type="text" id="affiliation" name="affiliation" placeholder="Enter affiliation (e.g., University or Company)...">
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="form-group">
+            <label for="contact">Contact Info (Optional)</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter contact info if available...">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Search</button>
+    </form>
+</div>
+
+</body>
+</html>

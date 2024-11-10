@@ -1,0 +1,60 @@
+        /* General Style */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f9ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #005f73;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        /* Incubator Box */
+        .incubator-box {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Incubator Header */
+        .incubator-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: #005f73;
+        }
+
+        .incubator-details {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Read More Button */
+        .read-more {
+            color: #0a9396;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Hidden Description */
+        .hidden {
+            display: none;
+        }

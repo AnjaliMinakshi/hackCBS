@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="incubatorSearch.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav">
+        <h1>Incubator Search Results</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Sample Incubator Listings -->
+        <div class="incubator-box">
+            <div class="incubator-header">
+                <span>Fintech Startup Incubator 1</span>
+                <span>Seed Funding - $1000-$2000</span>
+            </div>
+            <div class="incubator-details">
+                Location: New York, USA | Software | Membership Fee
+            </div>
+            <p class="description">
+                This incubator supports early-stage fintech startups by providing necessary resources and mentorship.
+                <span class="hidden">The program includes office space, legal advice, and networking opportunities with industry leaders.</span>
+            </p>
+            <span class="read-more" onclick="toggleDescription(this)">Read more</span>
+        </div>
+
+        <div class="incubator-box">
+            <div class="incubator-header">
+                <span>Fintech Startup Incubator 2</span>
+                <span>Seed Funding - $1000-$2000</span>
+            </div>
+            <div class="incubator-details">
+                Location: San Francisco, USA | Software | Membership Fee
+            </div>
+            <p class="description">
+                Focused on digital payments and financial software, this incubator provides strategic guidance and initial funding.
+                <span class="hidden">The incubator also offers investor connections, growth marketing, and product development support.</span>
+            </p>
+            <span class="read-more" onclick="toggleDescription(this)">Read more</span>
+        </div>
+
+        <div class="incubator-box">
+            <div class="incubator-header">
+                <span>Fintech Startup Incubator 3</span>
+                <span>Seed Funding - $1000-$2000</span>
+            </div>
+            <div class="incubator-details">
+                Location: London, UK | Software | Membership Fee
+            </div>
+            <p class="description">
+                This incubator specializes in compliance and regulatory support for fintech startups.
+                <span class="hidden">The program includes financial strategy sessions, tech support, and help with global compliance standards.</span>
+            </p>
+            <span class="read-more" onclick="toggleDescription(this)">Read more</span>
+        </div>
+
+        <!-- Add more incubator-box divs as needed for 8-9 listings -->
+
+    </div>
+    
+    <script src="incubator.js"></script>
+</body>
+</html>  
+
+
+
+

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar:hover {
+    background-color: transparent;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+  /* border-radius: 50%; */
+  margin-bottom: 5px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+/* Set the overall style for the language selector */
+.language-selector {
+    background-color: #fff; /* Use the same background color as the navigation bar */
+    border: none; /* Remove default border */
+    color: #333; /* Set text color to match other text in the navigation bar */
+    padding: 5px 10px; /* Adjust padding to align with the navigation bar elements */
+    font-size: 14px; /* Set the font size to match the text size in the navigation bar */
+    border-radius: 4px; /* Make the edges rounded to match button styles */
+  }
+  
+  /* Style for the dropdown */
+  .language-selector select {
+    background-color: transparent;
+    border: none;
+    color: #333; /* Ensure text color matches other navigation text */
+    font-size: inherit;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to match navigation bar items */
+  .language-selector:hover,
+  .language-selector select:hover {
+    background-color: #f0f0f0; /* Slightly darker color on hover */
+  }
+  
+  /* Optionally, add styling for selected state if needed */
+  .language-selector select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ------------------------------------------------------ */
+  
+  .auth-buttons {
+      display: flex;
+  }
+  
+  .btn {
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 5px;
+  }
+  
+  .btn:hover {
+      background-color: #45a049;
+  }
+
+  .about_content{
+    margin-left: 30px;
+  }

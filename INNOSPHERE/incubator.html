@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>incubator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="incubator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Incubators</h1>
+    
+        <!-- Region Selection -->
+        <div class="filter-section">
+            <label for="region">Select Region</label>
+            <select id="region" onchange="updateIncubatorsCount()">
+                <option value="North America">Gujrat</option>
+                <option value="Europe">Punjab</option>
+                <option value="Asia">Delhi</option>
+                <option value="Africa">Haryana</option>
+                <option value="Oceania">Rajasthan</option>
+            </select>
+        </div>
+    
+        <!-- Incubator Count -->
+        <div id="incubatorCount" class="result">There are 486 registered incubators in this region.</div>
+    
+        <!-- Domain Selection -->
+        <div class="filter-section">
+            <label for="domain">Domain</label>
+            <select id="domain">
+                <option value="meditech">Medtech</option>
+                <option value="fintech">Fintech</option>
+                <option value="edutech">Edtech</option>
+                <option value="ai">AI-based</option>
+                <option value="blockchain">Blockchain-based</option>
+                <option value="crypto">Crypto</option>
+            </select>
+        </div>
+    
+        <!-- Type of Startup -->
+        <div class="filter-section">
+            <label for="startupType">Type of Startup</label>
+            <select id="startupType">
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+            </select>
+        </div>
+    
+        <!-- Premium Rate -->
+        <div class="filter-section">
+            <label for="premiumRate">Premium Rate ($)</label>
+            <input type="range" id="premiumRate" min="1000" max="5000" step="500" oninput="displayRangeValue(this.value)">
+            <div id="rangeValue">$1000-$2000</div>
+        </div>
+    
+        <!-- Funding and Investment -->
+        <div class="filter-section">
+            <label for="funding">Funding and Investment</label>
+            <select id="funding">
+                <option value="seed">Seed Funding</option>
+                <option value="venture">Venture Capital</option>
+                <option value="angel">Angel Investors</option>
+            </select>
+        </div>
+    
+        <!-- Cost and Fees -->
+        <div class="filter-section">
+            <label for="cost">Cost and Fees</label>
+            <select id="cost">
+                <option value="membership">Membership Fees</option>
+                <option value="equity">Equity Stake</option>
+            </select>
+        </div>
+    
+        <!-- Search Button -->
+        <button onclick="searchIncubators()"><a href="incubatorSearch.html" style="text-decoration: none; color: white;">Search Incubator</a></button>
+    
+        <!-- Results -->
+        <div id="searchResult" class="result" style="display: none;">Searching...</div>
+    </div>
+    <script src="incubator.css"></script>
+</body>
+</html>
